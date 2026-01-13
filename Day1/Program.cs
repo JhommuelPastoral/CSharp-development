@@ -10,6 +10,9 @@ namespace Day1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World");
+            int num = 0;
+            Console.WriteLine(num);
         }
     }
 }
