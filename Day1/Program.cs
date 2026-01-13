@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Day1;
 
 namespace Day1
 {
@@ -13,6 +14,9 @@ namespace Day1
             Console.WriteLine("Hello World");
             int num = 0;
             Console.WriteLine(num);
+            Student student = new Student();
+            student.Name = "Test";
+            student.SayHello();
         }
     }
 }
