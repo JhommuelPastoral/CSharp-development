@@ -9,14 +9,14 @@ namespace Day1
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Test(string[] args)
         {
             Console.WriteLine("Hello World");
             int num = 0;
             Console.WriteLine(num);
-            Student student = new Student();
-            student.Name = "Test";
-            student.SayHello();
+            //Student student = new Student();
+            //student.Name = "Test";
+            //student.SayHello();
         }
     }
 }
