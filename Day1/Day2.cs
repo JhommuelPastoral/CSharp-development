@@ -18,7 +18,7 @@ using System.Threading.Tasks;
     E = Exponential
     F = Fixed Point 
     G = General 
-    N = Number (Group Separator) ex 1234.56 = N3 = 1,234,560
+    N = Number (Group Separator) ex 1234.56 = N3 = 1,234.560
     P = Percent
     
  
@@ -29,9 +29,14 @@ namespace Day1
 {
     internal class Day2
     {
-        static void Main(string[] args)
+        static void String(string[] args)
         {
             double age = 1234123.560;
+            int g = 12345;
+            var y = g.ToString().ToCharArray();
+            Array.Reverse(y);
+            Console.WriteLine(y);
+  
             int t = 10;
             //Console.WriteLine(age.ToString().GetType());
             Console.WriteLine(Convert.ToString(t,2));
@@ -46,15 +51,21 @@ namespace Day1
             //catch (Exception e) {
             //    Console.WriteLine($"{e.ToString()}  Error1231232");
             //}
-            string txtNum = "asd";
-            if(int.TryParse(txtNum, out int result))
+            string txtNum = "23";
+            int num = int.TryParse(txtNum, out int test) ? test : 100;
+            Console.WriteLine(num.GetType() );
+
+            var seen = new Dictionary<int, int>();
+            seen.Add(2, 4);
+            int x = seen.TryGetValue(2, out int value) ? value : 0;
+            
+            foreach(KeyValuePair<int, int> pair in seen)
             {
-                Console.WriteLine(result);
+                Console.WriteLine("{0} : {1}", pair.Key, pair.Value );
             }
-            else
-            {
-                Console.WriteLine("Not A valid");
-            }
+            Console.WriteLine(x);
+            
+
         }
 
     }
