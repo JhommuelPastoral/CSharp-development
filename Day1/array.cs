@@ -15,13 +15,21 @@ namespace Day1
                 Console.WriteLine(i);
             
             }
-            string x = "hello world";
+            string x = "           hello world";
+            string reversed = new string(x.Reverse().ToArray());
+            x.Trim();
+            Console.WriteLine(int.MinValue );
+            Math.Exp(2);
             
-            Console.WriteLine(array.Contains(1));
-              
+            Console.WriteLine(x);
+            Console.WriteLine(int.TryParse("     -4", out int result) );
 
 
-        
-       }
+            int[] test = new int[] { 11, 1, 2, 4, 5 };
+            Array.Sort(test);
+            foreach (var i in test) {
+                Console.Write($" {i},");
+            }
+        }
     }
 }
