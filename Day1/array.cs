@@ -8,7 +8,7 @@ namespace Day1
 {
     internal class array
     {
-       static void Main(string[] args){
+       static void main(string[] args){
             int[] array = { 1, 2, 3};
             array[2] = 1;
             foreach (var i in array) { 
@@ -30,6 +30,7 @@ namespace Day1
             foreach (var i in test) {
                 Console.Write($" {i},");
             }
+
         }
     }
 }
