@@ -30,6 +30,7 @@ namespace Day1
             foreach (var i in test) {
                 Console.Write($" {i},");
             }
+            
 
         }
     }
